@@ -6,7 +6,7 @@ import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import './Contact.css';
 
 const Contact = () => {
-  const whatsappNumber = '+1234567890'; // Replace with your WhatsApp number
+  const whatsappNumber = '+212657123796'; // Replace with your WhatsApp number
   const whatsappMessage = 'Hello! I\'m interested in your IPTV service.';
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
