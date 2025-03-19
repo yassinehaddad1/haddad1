@@ -10,10 +10,8 @@
   color: var(--white);
   overflow: hidden;
   padding: 0 20px;
-  background: linear-gradient(135deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0.289) 100%),
-    url('https://amendo.com/wp-content/uploads/2021/10/bigstock-African-Family-Watching-Tv-Mov-417110977.jpg') no-repeat center center;
+  background: url('https://amendo.com/wp-content/uploads/2021/10/bigstock-African-Family-Watching-Tv-Mov-417110977.jpg') no-repeat center center fixed;
   background-size: cover;
-  background-position: center;
   font-family: 'Inter', sans-serif;
 }
 
@@ -23,12 +21,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.7) 0%,
-    rgba(0, 0, 0, 0.5) 50%,
-    rgba(0, 0, 0, 0.8) 100%
-  );
+  background: none;
   z-index: 1;
 }
 
@@ -161,7 +154,7 @@
   display: flex;
   gap: 4rem;
   padding: 0 2rem;
-  animation: scroll 10s linear infinite;
+  animation: scroll 5s linear infinite;
   white-space: nowrap;
 }
 
@@ -184,20 +177,17 @@
   padding: 0.5rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  filter: brightness(0.9);
-}
-
-.channel-item:hover {
-  filter: brightness(1);
-  transform: translateY(-2px);
 }
 
 .channel-logo {
-  height: 35px;
-  width: auto;
-  max-width: 120px;
-  object-fit: contain;
+  width: 120px;
+  height: auto;
+  filter: none;
   transition: transform 0.3s ease;
+}
+
+.channel-logo:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
