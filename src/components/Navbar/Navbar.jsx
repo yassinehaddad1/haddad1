@@ -49,7 +49,6 @@ const Navbar = () => {
           </div>
 
           <div className="nav-buttons">
-            <a href="#pricing" className="get-started-btn">Get Started</a>
             <button className="menu-toggle" onClick={toggleMobileMenu}>
               <MenuIcon />
             </button>
@@ -69,7 +68,6 @@ const Navbar = () => {
             <div className="mobile-menu-header">
               <Link to="/" className="navbar-brand" onClick={() => setMobileMenuOpen(false)}>
                 <span className="brand-text">
-                  Premium<span className="brand-highlight">IPTV</span>
                 </span>
               </Link>
               <button className="menu-toggle" onClick={toggleMobileMenu}>
@@ -93,9 +91,7 @@ const Navbar = () => {
               <a href="#contact" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>
                 Contact
               </a>
-              <a href="#pricing" className="get-started-btn" onClick={() => setMobileMenuOpen(false)}>
-                Get Started
-              </a>
+              
             </div>
           </motion.div>
         )}

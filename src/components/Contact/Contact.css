@@ -1,6 +1,9 @@
 .contact-section {
   padding: 100px 0;
-  background-color: var(--dark-gray);
+  background-image: url("https://www.eu-startups.com/wp-content/uploads/2023/04/Zadarma.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   position: relative;
   overflow: hidden;
 }
@@ -41,7 +44,7 @@
 }
 
 .contact-card {
-  background: rgba(45, 45, 45, 0.5);
+  background: rgba(73, 69, 69, 0.5);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 2rem;
@@ -59,7 +62,7 @@
 }
 
 .contact-card.whatsapp {
-  background: linear-gradient(145deg, rgba(37, 211, 102, 0.1), rgba(37, 211, 102, 0.05));
+  background: rgba(73, 69, 69, 0.5);
 }
 
 .contact-icon {

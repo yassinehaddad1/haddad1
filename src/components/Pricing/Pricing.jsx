@@ -33,7 +33,7 @@ const plans = [
   {
     name: 'Premium',
     price: '39.99',
-    duration: '6 Months',
+    duration: '12 Months',
     features: [
       '4K Ultra HD Streaming',
       '20,000+ Live Channels',
@@ -91,10 +91,14 @@ const Pricing = () => {
               </ul>
 
               <a
-                href="#contact"
+                href={plan.name === 'Basic' 
+                  ? "https://www.paypal.com/ncp/payment/H6MTWG9Z9UQK4"
+                  : plan.name === 'Standard'
+                  ? "https://www.paypal.com/ncp/payment/A42B65BLZFTSG"
+                  : "https://www.paypal.com/ncp/payment/ZLM4KPZDQF9B6"}
                 className={`select-plan-btn ${plan.popular ? 'popular' : ''}`}
               >
-                Select Plan
+                Get Now
               </a>
             </motion.div>
           ))}

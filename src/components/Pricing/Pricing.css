@@ -1,6 +1,6 @@
 .pricing-section {
   padding: 100px 0;
-  background-color: var(--dark-gray);
+  background-color: black;
   position: relative;
   overflow: hidden;
 }
@@ -20,7 +20,7 @@
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, var(--white) 0%, var(--primary-blue) 100%);
+  background: linear-gradient(135deg, var(--white) 0%, var(--primary-red) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -49,20 +49,20 @@
 
 .pricing-card:hover {
   transform: translateY(-10px);
-  border-color: var(--primary-blue);
-  box-shadow: 0 10px 30px rgba(33, 150, 243, 0.2);
+  border-color: var(--primary-red);
+  box-shadow: 0 10px 30px rgba(255, 23, 68, 0.2);
 }
 
 .pricing-card.popular {
-  background: linear-gradient(135deg, rgba(33, 150, 243, 0.1) 0%, rgba(25, 118, 210, 0.1) 100%);
-  border-color: var(--primary-blue);
+  background: linear-gradient(135deg, rgba(255, 23, 68, 0.1) 0%, rgba(255, 69, 105, 0.1) 100%);
+  border-color: var(--primary-red);
 }
 
 .popular-tag {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background: var(--primary-blue);
+  background: var(--primary-red);
   color: var(--white);
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -97,7 +97,7 @@
 .amount {
   font-size: 3rem;
   font-weight: 700;
-  color: var(--primary-blue);
+  color: var(--primary-red);
 }
 
 .duration {
@@ -121,7 +121,7 @@
 }
 
 .check-icon {
-  color: var(--primary-blue);
+  color: var(--primary-red);
   font-size: 1.2rem;
 }
 
@@ -132,7 +132,7 @@
   text-align: center;
   background: transparent;
   color: var(--white);
-  border: 2px solid var(--primary-blue);
+  border: 2px solid var(--primary-red);
   border-radius: 8px;
   font-size: 1.1rem;
   font-weight: 600;
@@ -141,17 +141,17 @@
 }
 
 .select-plan-btn:hover {
-  background: var(--primary-blue);
+  background: var(--primary-red);
   transform: translateY(-2px);
 }
 
 .select-plan-btn.popular {
-  background: var(--primary-blue);
+  background: var(--primary-red);
 }
 
 .select-plan-btn.popular:hover {
-  background: var(--secondary-blue);
-  border-color: var(--secondary-blue);
+  background: var(--secondary-red);
+  border-color: var(--secondary-red);
 }
 
 .pricing-footer {
