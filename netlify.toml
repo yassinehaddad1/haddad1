@@ -9,3 +9,11 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+
+[build]
+  command = "npm run build"  # Change if needed
+  publish = "dist"           # Adjust for your project
+
+[build.processing]
+  skip_processing = true  # Disables submodule checking
